@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 
 import javax.inject.Inject;
+import javax.inject.Singleton;
 import javax.servlet.ServletException;
 //import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -12,6 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 
 //@WebServlet("/Hello")
 @SuppressWarnings("serial")
+@Singleton
 public class HelloWorldServlet extends HttpServlet {
 
 	@Inject

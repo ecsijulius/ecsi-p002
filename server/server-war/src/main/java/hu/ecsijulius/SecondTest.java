@@ -3,17 +3,20 @@ package hu.ecsijulius;
 import java.util.Date;
 
 import javax.inject.Inject;
-import javax.inject.Singleton;
 
-@Singleton
-public class TestClass {
+import com.google.inject.servlet.RequestScoped;
+
+@RequestScoped
+public class SecondTest {
+
 	@Inject
 	private Date date;
 
-	public TestClass() {
+	public SecondTest() {
 	}
 
 	public Date getDate() {
 		return date;
 	}
+
 }
